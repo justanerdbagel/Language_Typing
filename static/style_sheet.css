@@ -1,0 +1,27 @@
+  header {
+    background-color: hsl(180, 90%, 35%);
+    color: #FFFFFF;
+  }
+
+  h1{
+      padding-top: 10px;
+      text-indent: 10px;
+  }
+
+ a{
+     color: #FFFFFF;
+ }
+
+  nav{
+      background-color: hsl(180, 80%, 25%);
+  }
+
+  nav ul {
+      margin : 0;
+      padding: 5px 0 5px 30px;
+  }
+
+  nav li{
+      display: inline;
+      margin-right: 20px;
+  }

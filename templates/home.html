@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Lang</title>
+</head>
+
+<body>
+
+{% block content %}
+
+{% if user  %}
+<h2>Hello {{ user.username }}, get ready to type some stuff!</h2>
+{% else %}
+<h2>Hello, get ready to type some stuff!</h2>
+{% endif %}
+{% endblock %}
+</body>
+</html>
