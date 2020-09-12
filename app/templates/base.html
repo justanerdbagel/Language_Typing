@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="/app/static/style_sheet.css">
+
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Welcome to TypingLang</title>
+    {% endif %}
+</head>
+<body>
+<header>
+    <h1>TypingLang</h1>
+    <nav>
+        <ul>
+            <li> <a href="{{ url_for('home') }}">Home</a> </li>
+            <li>Sign up</li>
+            <li><a href="{{ url_for('login') }}">Login</a> </li>
+            <li> <a href="{{ url_for('type_stuff') }}">Type Stuff</a> </li>
+            <li>Profile</li>
+            <li>Time</li>
+            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+            <li>Map of the Problematique</li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
+{% block content %}{% endblock %}
+
+
+</body>
+</html>
