@@ -7,16 +7,16 @@
 from app import app, db
 
 
-user = {'username': 'bobby'}
-posts = [{
-        'author': {'username': 'John'},
-        'body': 'Beautiful day in Portland!'
-        },
-        {
-        'author': {'username': 'Susan'},
-        'body': 'The Avengers movie was so cool!'
-        }
-        ]
+# user = {'username': 'bobby'}
+# posts = [{
+#         'author': {'username': 'John'},
+#         'body': 'Beautiful day in Portland!'
+#         },
+#         {
+#         'author': {'username': 'Susan'},
+#         'body': 'The Avengers movie was so cool!'
+#         }
+#         ]
 
 #
 # @app.route('/')
